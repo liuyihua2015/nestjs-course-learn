@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/qs@6.10.2/dist/qs.js"></script>
+</head>
+<body>
+    <script>
+        async function formUrlEncoded() {
+            const res = await axios.post('http://127.0.0.1:3000/bbb', Qs.stringify({
+                name: '光',
+                age: 20
+            }));
+            console.log(res);  
+        }
+
+        formUrlEncoded();
+    </script>
+</body>
+</html>
